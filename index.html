@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Massage Example | Booking Demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark">💆</div>
+        <span class="brand-name">Sports Massage Example</span>
+      </div>
+      <p class="tagline">Example booking site — treatments &amp; live availability</p>
+      <p class="hours-line">This is a demo build — not a real business.</p>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <section class="products-section">
+      <h2>Treatments</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <aside class="basket-panel">
+      <h2>Your Booking</h2>
+      <div id="basket-items" class="basket-items">
+        <p class="empty-basket">Nothing added yet</p>
+      </div>
+
+      <div class="basket-total-row">
+        <span>Total</span>
+        <span id="basket-total">£0.00</span>
+      </div>
+
+      <div class="slot-picker">
+        <label for="customer-name">Your name</label>
+        <input type="text" id="customer-name" placeholder="Full name">
+        <label for="booking-date">Choose a date</label>
+        <input type="date" id="booking-date">
+        <label for="time-slot">Choose a time</label>
+        <select id="time-slot">
+          <option>9:00 AM</option>
+          <option>10:00 AM</option>
+          <option>11:00 AM</option>
+          <option>1:00 PM</option>
+          <option>2:00 PM</option>
+          <option>3:00 PM</option>
+        </select>
+      </div>
+
+      <button id="checkout-btn" class="checkout-btn" disabled>Confirm &amp; Pay</button>
+    </aside>
+
+  </main>
+
+  <div id="confirmation-overlay" class="overlay hidden">
+    <div class="confirmation-box">
+      <h3>Booking received!</h3>
+      <p>This is an example only — no real booking has been made. This shows how a customer's confirmation would look on a live site, including automatic email confirmation and a live diary the owner can manage.</p>
+      <button id="close-overlay" class="checkout-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
