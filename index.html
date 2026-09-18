@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sports Massage Example | Booking Demo</title>
+<title>Sports Massage Example | Home</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,56 +16,40 @@
       </div>
       <p class="tagline">Example booking site — treatments &amp; live availability</p>
       <p class="hours-line">This is a demo build — not a real business.</p>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="booking.html">Book Now</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="page">
+  <main class="hero-centered">
+    <div class="hero-icon">💆</div>
+    <h1>Recovery &amp; performance, one booking at a time</h1>
+    <p>A classic, centred layout — clean and simple, ideal for a therapist, clinic, or single-practitioner business where trust and clarity matter most.</p>
+    <a href="booking.html" class="cta-btn">Book a Treatment</a>
 
-    <section class="products-section">
-      <h2>Treatments</h2>
-      <div id="product-list" class="product-grid"></div>
-    </section>
-
-    <aside class="basket-panel">
-      <h2>Your Booking</h2>
-      <div id="basket-items" class="basket-items">
-        <p class="empty-basket">Nothing added yet</p>
+    <div class="feature-row">
+      <div class="feature-block">
+        <div class="feature-icon">📅</div>
+        <div class="feature-title">Live Diary</div>
       </div>
-
-      <div class="basket-total-row">
-        <span>Total</span>
-        <span id="basket-total">£0.00</span>
+      <div class="feature-block">
+        <div class="feature-icon">⏱️</div>
+        <div class="feature-title">No Double Bookings</div>
       </div>
-
-      <div class="slot-picker">
-        <label for="customer-name">Your name</label>
-        <input type="text" id="customer-name" placeholder="Full name">
-        <label for="booking-date">Choose a date</label>
-        <input type="date" id="booking-date">
-        <label for="time-slot">Choose a time</label>
-        <select id="time-slot">
-          <option>9:00 AM</option>
-          <option>10:00 AM</option>
-          <option>11:00 AM</option>
-          <option>1:00 PM</option>
-          <option>2:00 PM</option>
-          <option>3:00 PM</option>
-        </select>
+      <div class="feature-block">
+        <div class="feature-icon">🔐</div>
+        <div class="feature-title">Private Owner Login</div>
       </div>
-
-      <button id="checkout-btn" class="checkout-btn" disabled>Confirm &amp; Pay</button>
-    </aside>
-
+    </div>
   </main>
 
-  <div id="confirmation-overlay" class="overlay hidden">
-    <div class="confirmation-box">
-      <h3>Booking received!</h3>
-      <p>This is an example only — no real booking has been made. This shows how a customer's confirmation would look on a live site, including automatic email confirmation and a live diary the owner can manage.</p>
-      <button id="close-overlay" class="checkout-btn">Close</button>
-    </div>
-  </div>
+  <footer class="site-footer">
+    <p>Example site by <a href="https://yourbrand5241.netlify.app" target="_blank" rel="noopener">YourBrand</a></p>
+  </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
