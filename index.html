@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sports Massage Example | Home</title>
+<title>Kinetiq Sports Massage | Home</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="enhance.css">
 </head>
-<body>
+<body data-theme="massage">
 
   <header class="site-header">
     <div class="header-inner">
       <div class="brand">
-        <div class="brand-mark">💆</div>
-        <span class="brand-name">Sports Massage Example</span>
+        <div class="brand-logo" aria-hidden="true">K</div>
+        <span class="brand-name">Kinetiq Sports Massage</span>
       </div>
-      <p class="tagline">Example booking site — treatments &amp; live availability</p>
+      <p class="tagline">Sports massage &amp; recovery · Belfast</p>
       <p class="hours-line">This is a demo build — not a real business.</p>
       <nav class="site-nav">
         <a href="index.html" class="active">Home</a>
@@ -26,9 +27,9 @@
   </header>
 
   <main class="hero-centered">
-    <div class="hero-icon">💆</div>
+    <div class="hero-art" data-hero-art></div>
     <h1>Recovery &amp; performance, one booking at a time</h1>
-    <p>A classic, centred layout — clean and simple, ideal for a therapist, clinic, or single-practitioner business where trust and clarity matter most.</p>
+    <p>Sports massage, cupping and dry needling to help you recover faster and perform at your best. Book your treatment online in seconds, day or night.</p>
     <a href="booking.html" class="cta-btn">Book a Treatment</a>
 
     <div class="feature-row">
@@ -51,5 +52,6 @@
     <p>Example site by <a href="https://yourbrand5241.netlify.app" target="_blank" rel="noopener">YourBrand</a></p>
   </footer>
 
+<script src="enhance.js" defer></script>
 </body>
 </html>
